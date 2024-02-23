@@ -1,0 +1,23 @@
+cache-dir = "./.poetry_cache"
+
+[experimental]
+system-git-client = false
+
+[installer]
+#max-workers = null
+#no-binary = null
+#parallel = true
+
+[virtualenvs]
+create = true
+path = "./.virtualenvs"
+prompt = "{project_name}-py{python_version}"
+prefer-active-python = false
+
+#in-project = true
+
+[virtualenvs.options]
+always-copy = false
+no-pip = false
+no-setuptools = false
+system-site-packages = false
