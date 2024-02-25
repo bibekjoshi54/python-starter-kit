@@ -22,7 +22,7 @@ Will be adding the support for cookie cutter soon.
 
 ### Containers
 
-I have added a docker file, which performs a multistage build for the project.
+The project comes with Dockerfile which performs the multistage build
 The docker image would not have development and test dependencies installed, and the final image would have only installed production dependencies.
 
 To test inside the container you can use the docker compose.
