@@ -5,12 +5,12 @@
 This is a sample project structure template for a Python project. I use this template in most of
 my projects.
 
-It contains a bunch of shell file, that can be executed using make command.
+It contains a bunch of shell files, that can be executed using the make command.
 
-Note: If you want to use this for now, you can do project wide search and
+Note: If you want to use this for now, you can do a project-wide search and
 replace for `sample_project` and `SampleProject` with your project name.
 
-I would be adding the support for cookie cutter soon.
+Will be adding the support for cookie cutter soon.
 
 ### Make Commands
 - `make setup`: Setups the development environment
@@ -22,12 +22,12 @@ I would be adding the support for cookie cutter soon.
 
 ### Containers
 
-I have added a docker file, which performs multistage build for the project.
-The docker image would have development and test dependencies installed, and the final image would have only the production dependencies installed.
+I have added a docker file, which performs a multistage build for the project.
+The docker image would not have development and test dependencies installed, and the final image would have only installed production dependencies.
 
-To run test inside the container you can use the docker compose.
+To test inside the container you can use the docker compose.
 
-- `docker compose run dev`: Runs the code without based on base docker image
+- `docker compose run dev`: Runs the code based on the base docker image
 - `docker compose run unit_tests`: Runs the unit_tests inside the container.
 - `docker compose run integration_tests`: Runs the integration_tests inside the container.
 - `docker compose run e2e_tests`: Runs the e2e_tests inside the container.
@@ -36,7 +36,7 @@ To run test inside the container you can use the docker compose.
 ### Poetry
 
 Poetry is used for managing the dependencies of the project.
-`project.toml` file contains configuration for the various tools used in this porject.
+`project.toml` file contains the configuration for the various tools used in this project.
 
 #### Quick commands to remember:
 
@@ -47,5 +47,5 @@ Poetry is used for managing the dependencies of the project.
 - `poetry shell`: Activates the poetry virtual environment
 
 ### Pending Items
-- Add support for github actions
-- Add support for cookie cutter
+- Add support for GitHub actions
+- Add support for cookie-cutter
